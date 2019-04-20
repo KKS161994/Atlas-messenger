@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.Atlas.Light">
+        <!-- Apply default Atlas styles -->
+        <item name="AtlasConversationsRecyclerView">@style/AtlasConversationsRecyclerView</item>
+        <item name="AtlasMessagesRecyclerView">@style/AtlasMessagesRecyclerView</item>
+        <item name="AtlasMessageComposer">@style/AtlasMessageComposer</item>
+        <item name="AtlasAddressBar">@style/AtlasAddressBar</item>
+        <item name="AtlasTypingIndicator">@style/AtlasTypingIndicator</item>
+    </style>
+
+    <style name="AppTheme.RedButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/atlas_delete_background</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>

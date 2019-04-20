@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "679854531597",
+    "firebase_url": "https://atlas-messenger-6866d.firebaseio.com",
+    "project_id": "atlas-messenger-6866d",
+    "storage_bucket": "atlas-messenger-6866d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679854531597:android:b80d5dd65969c4b6",
+        "android_client_info": {
+          "package_name": "com.layer.messenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679854531597-gg8umv5v55kdikisv326htbcua1pm6ha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfzSMaWktMRrCPfJxg8EGhjFvQ3foNhGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "679854531597-gg8umv5v55kdikisv326htbcua1pm6ha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

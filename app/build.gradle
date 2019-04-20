@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+apply from: "$rootDir/tools/tools.gradle"
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        applicationId "com.layer.messenger"
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 85
+        versionName "$versionCode"
+        testInstrumentationRunner 'com.layer.messenger.testrunner.TestButlerRunner'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    maven { url "https://raw.githubusercontent.com/layerhq/releases-android/master/releases/" }
+    maven { url "https://raw.githubusercontent.com/layerhq/Atlas-Android/master/releases/" }
+}
+final versions = rootProject.ext
+
+dependencies {
+    // All flavors
+    compile 'com.layer.atlas:layer-atlas:0.4.15'
+
+
+    compile "com.google.firebase:firebase-messaging:10.2.1"
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    testCompile 'junit:junit:4.12'
+
+    androidTestCompile "com.linkedin.testbutler:test-butler-library:$versions.testButler"
+}
+
+apply plugin: 'com.google.gms.google-services'
